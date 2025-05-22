@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inclus - PARTYMANIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #fdf6f9, #ffeef4);
+      color: #3a3a3a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #ff2e7a;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(255, 46, 122, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo-img {
+      height: 55px;
+      filter: drop-shadow(0 0 5px rgba(255, 46, 122, 0.7));
+    }
+    main {
+      flex-grow: 1;
+      max-width: 720px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    main h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      color: #ff2e7a;
+      margin-bottom: 2rem;
+      letter-spacing: 1.5px;
+      text-shadow: 1px 1px 4px rgba(255, 46, 122, 0.3);
+    }
+    ul.inclus-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 480px;
+      text-align: left;
+    }
+    ul.inclus-list li {
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1rem 1.3rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 14px rgba(255, 64, 129, 0.15);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #6b2350;
+      user-select: none;
+      transition: box-shadow 0.3s ease;
+    }
+    ul.inclus-list li:hover {
+      box-shadow: 0 8px 25px rgba(255, 64, 129, 0.3);
+    }
+    nav.main-nav {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    nav.main-nav a {
+      display: inline-block;
+      background: #ff4081;
+      color: white;
+      padding: 0.85rem 1.9rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 64, 129, 0.5);
+      transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.2s ease;
+      user-select: none;
+      cursor: pointer;
+    }
+    nav.main-nav a:hover,
+    nav.main-nav a:focus {
+      background: #d91e64;
+      box-shadow: 0 8px 20px rgba(217, 30, 100, 0.75);
+      transform: translateY(-3px);
+      outline: none;
+    }
+    @media (max-width: 480px) {
+      main h1 {
+        font-size: 2.4rem;
+      }
+      ul.inclus-list li {
+        font-size: 1rem;
+      }
+      nav.main-nav a {
+        padding: 0.75rem 1.4rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="partymania_logo.png" alt="PARTYMANIA Logo" class="logo-img" />
+  </header>
+  <main>
+    <h1>📦 Inclus dans tous les packs</h1>
+    <ul class="inclus-list" aria-label="Liste des inclus dans tous les packs">
+      <li>2x enceintes 25W</li>
+      <li>Musique pendant toute la fête</li>
+      <li>Jeux de base animés pendant les fêtes</li>
+      <li>Fun garanti ! 🎉</li>
+    </ul>
+    <nav class="main-nav">
+      <a href="index.html" aria-label="Retour à la page d'accueil">← Retour à l'accueil</a>
+    </nav>
+  </main>
+  <footer>
+    © 2025 PARTYMANIA. Tous droits réservés.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ - PARTYMANIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #fdf6f9, #ffeef4);
+      color: #3a3a3a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #ff2e7a;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(255, 46, 122, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo-img {
+      height: 55px;
+      filter: drop-shadow(0 0 5px rgba(255, 46, 122, 0.7));
+    }
+    main {
+      flex-grow: 1;
+      max-width: 720px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+    }
+    main h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      color: #ff2e7a;
+      margin-bottom: 2rem;
+      letter-spacing: 1.5px;
+      text-align: center;
+      text-shadow: 1px 1px 4px rgba(255, 46, 122, 0.3);
+    }
+    section.faq-item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(255, 64, 129, 0.15);
+      margin-bottom: 1.5rem;
+      padding: 1.4rem 2rem;
+      cursor: default;
+      user-select: none;
+      transition: box-shadow 0.3s ease;
+    }
+    section.faq-item:hover {
+      box-shadow: 0 9px 22px rgba(255, 64, 129, 0.3);
+    }
+    section.faq-item h2 {
+      margin: 0 0 0.8rem 0;
+      font-weight: 700;
+      color: #d81e5b;
+      font-size: 1.25rem;
+    }
+    section.faq-item p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #555;
+    }
+    nav.main-nav {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    nav.main-nav a {
+      display: inline-block;
+      background: #ff4081;
+      color: white;
+      padding: 0.85rem 1.9rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 64, 129, 0.5);
+      transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.2s ease;
+      user-select: none;
+      cursor: pointer;
+    }
+    nav.main-nav a:hover,
+    nav.main-nav a:focus {
+      background: #d91e64;
+      box-shadow: 0 8px 20px rgba(217, 30, 100, 0.75);
+      transform: translateY(-3px);
+      outline: none;
+    }
+    footer {
+      font-size: 0.98rem;
+      color: #c92b6d;
+      text-align: center;
+      padding: 1.2rem 0 1.1rem 0;
+      background: transparent;
+      margin-top: auto;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+    }
+    @media (max-width: 480px) {
+      main h1 {
+        font-size: 2.4rem;
+      }
+      section.faq-item h2 {
+        font-size: 1.1rem;
+      }
+      section.faq-item p {
+        font-size: 0.95rem;
+      }
+      nav.main-nav a {
+        padding: 0.75rem 1.4rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="partymania_logo.png" alt="PARTYMANIA Logo" class="logo-img" />
+  </header>
+  <main>
+    <h1>❓ FAQ - Questions fréquentes</h1>
+
+    <section class="faq-item" tabindex="0">
+      <h2>Peut-on combiner plusieurs packs ?</h2>
+      <p>Oui, tous nos packs sont personnalisables et peuvent être combinés selon vos envies.</p>
+    </section>
+
+    <section class="faq-item" tabindex="0">
+      <h2>Est-il possible d’apporter sa propre nourriture ?</h2>
+      <p>Oui, vous pouvez apporter vos snacks et boissons, mais merci de nous prévenir à l’avance.</p>
+    </section>
+
+    <section class="faq-item" tabindex="0">
+      <h2>Comment réserver une fête avec PARTYMANIA ?</h2>
+      <p>Utilisez notre page <a href="contact.html" style="color:#ff2e7a; font-weight:700; text-decoration: underline;">contact</a> pour nous envoyer une demande, et nous reviendrons rapidement vers vous.</p>
+    </section>
+
+    <section class="faq-item" tabindex="0">
+      <h2>Que se passe-t-il en cas d'annulation ?</h2>
+      <p>Les annulations doivent être faites au moins 48 heures avant la date prévue pour un remboursement complet.</p>
+    </section>
+
+    <section class="faq-item" tabindex="0">
+      <h2>Proposez-vous des animations adaptées aux enfants ?</h2>
+      <p>Oui, tous nos jeux et animations sont conçus pour être adaptés (et sécurisés) pour les enfants en dessous des 12 ans.</p>
+    </section>
+
+    <nav class="main-nav">
+      <a href="index.html" aria-label="Retour à la page d'accueil">← Retour à l'accueil</a>
+    </nav>
+  </main>
+  <footer>
+    © 2025 PARTYMANIA. Tous droits réservés.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Options Supplémentaires - PARTYMANIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #fdf6f9, #ffeef4);
+      color: #3a3a3a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #ff2e7a;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(255, 46, 122, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo-img {
+      height: 55px;
+      filter: drop-shadow(0 0 5px rgba(255, 46, 122, 0.7));
+    }
+    main {
+      flex-grow: 1;
+      max-width: 720px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    main h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      color: #ff2e7a;
+      margin-bottom: 2rem;
+      letter-spacing: 1.5px;
+      text-shadow: 1px 1px 4px rgba(255, 46, 122, 0.3);
+    }
+    .option-list {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(255, 64, 129, 0.15);
+      padding: 2rem;
+      text-align: left;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      user-select: none;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .option-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .option-list li {
+      margin-bottom: 1rem;
+    }
+    .option-list strong {
+      color: #ff2e7a;
+    }
+    nav.main-nav {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    nav.main-nav a {
+      display: inline-block;
+      background: #ff4081;
+      color: white;
+      padding: 0.85rem 1.9rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 64, 129, 0.5);
+      transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.2s ease;
+      user-select: none;
+      cursor: pointer;
+    }
+    nav.main-nav a:hover,
+    nav.main-nav a:focus {
+      background: #d91e64;
+      box-shadow: 0 8px 20px rgba(217, 30, 100, 0.75);
+      transform: translateY(-3px);
+      outline: none;
+    }
+    @media (max-width: 480px) {
+      main h1 {
+        font-size: 2.4rem;
+      }
+      .option-list {
+        font-size: 1rem;
+        padding: 1.5rem;
+      }
+      nav.main-nav a {
+        padding: 0.75rem 1.4rem;
+        font-size: 1rem;
+      }
+    }
+    footer {
+      font-size: 0.98rem;
+      color: #c92b6d;
+      text-align: center;
+      padding: 1.2rem 0 1.1rem 0;
+      background: transparent;
+      margin-top: auto;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="partymania_logo.png" alt="PARTYMANIA Logo" class="logo-img" />
+  </header>
+  <main>
+    <h1>🧩 Options Supplémentaires</h1>
+    <div class="option-list">
+      <ul>
+        <li>📺 Écran 1080p 60Hz (2x HDMI, 1x VGA) — <strong>+10 CHF</strong></li>
+        <li>📺 + 🛜 Écran + AirPlay — <strong>+19 CHF</strong></li>
+        <li>💡 Jeux de lumière disco — <strong>+15 CHF</strong></li>
+        <li>🔊 Haut-parleur Yamaha HS5 (max 2x) — <strong>+16 CHF / unité</strong></li>
+        <li>🎨 Visuel personnalisé à l'écran (si écran inclus) — <strong>+7.99 CHF</strong></li>
+        <li>🍬 Snacks (chips, bonbon s...) — <strong>+15.99 CHF</strong></li>
+        <li>🥤 Boissons (Coca, Ice Tea...) — <strong>+14.99 CHF</strong></li>
+        <li>🎈 Décoration fête/anniversaire — <strong>+26.99 CHF</strong></li>
+        <li>🪑 Table pliante portable — <strong>+9.99 CHF</strong></li>
+      </ul>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" aria-label="Retour à la page d'accueil">← Retour à l'accueil</a>
+    </nav>
+  </main>
+  <footer>
+    © 2025 PARTYMANIA. Tous droits réservés.
+  </footer>
+</body>
+</html>
