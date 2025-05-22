@@ -1,333 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PARTYMANIA - Organisation d'anniversaires</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PARTYMANIA - Accueil</title>
+  <link href="https://://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
     }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-      color: #333;
-      padding-top: 70px;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background: #ff4081;
-      padding: 1rem 2rem;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      animation: slideDown 0.5s ease forwards;
-      gap: 20px;
-      min-height: 70px;
-    }
-
-    .logo-container {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .logo-img {
-      height: 50px;
-      object-fit: contain;
-      filter: drop-shadow(0 0 3px rgba(255, 64, 129, 0.5));
-    }
-
-    @keyframes slideDown {
-      from { top: -100px; opacity: 0; }
-      to { top: 0; opacity: 1; }
-    }
-
-    .menu-toggle {
-      position: absolute;
-      right: 20px;
-      font-size: 24px;
-      cursor: pointer;
-      z-index: 1001;
-    }
-
-    .side-menu {
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 200px;
-      height: 100%;
-      background-color: #ff4081;
-      color: white;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #fff0f6, #ffe8ef);
+      color: #3a3a3a;
       display: flex;
       flex-direction: column;
-      padding-top: 70px;
-      transition: right 0.3s ease;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #ff2e7a;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 46, 122, 0.3);
+      position: sticky;
+      top: 0;
       z-index: 1000;
     }
-
-    .side-menu a {
-      padding: 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.2s;
+    .logo-img {
+      height: 60px;
+      filter: drop-shadow(0 0 4px rgba(255, 46, 122, 0.5));
     }
-
-    .side-menu a:hover {
-      background-color: #e03570;
-    }
-
-    .side-menu.open {
-      right: 0;
-    }
-
     main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      animation: fadeIn 1s ease forwards;
+      flex-grow: 1;
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    section {
-      margin-bottom: 2rem;
-      padding: 1rem;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
-    }
-
-    h1, h2 {
-      color: #ff4081;
+    h1 {
+      font-size: 3.5rem;
+      color: #ff2e7a;
       margin-bottom: 1rem;
+      font-weight: 900;
     }
-
-    .pack {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 10px;
-      border: 2px solid #ffb6c1;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
+    p {
+      font-size: 1.3rem;
+      color: #555;
+      max-width: 580px;
+      margin: 0 auto 2rem;
     }
-
-    .pack:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.2rem;
+      max-width: 700px;
+      margin: 2rem auto 0;
     }
-
-    .promo {
-      font-weight: bold;
-      color: #388e3c;
+    nav a {
+      background: linear-gradient(45deg, #ff4081, #ff2e7a);
+      color: white;
+      padding: 1rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(255, 46, 122, 0.2);
     }
-
-    ul {
-      padding-left: 1.5rem;
-      margin-top: 0.5rem;
+    nav a:hover {
+      background: linear-gradient(45deg, #ff2e7a, #ff4081);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(255, 46, 122, 0.4);
     }
-
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
+      padding: 1rem 2rem;
+      font-size: 0.95rem;
+      color: #a63d6e;
+      background: #fff3f9;
+      box-shadow: inset 0 1px 3px rgba(255, 64, 129, 0.1);
+      font-weight: 600;
     }
-
-    #floating-intro {
-      position: fixed;
-      top: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      padding: 1.5rem 2rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      z-index: 9999;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.5s ease;
-      text-align: center;
-      max-width: 90%;
-    }
-
-    #floating-intro.show {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    #floating-intro button {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      background: none;
-      border: none;
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-
-    .reveal {
-      opacity: 1;
-      transform: none;
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.05rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-container">
-      <img src="partymania_logo.png" alt="PARTYMANIA Logo" class="logo-img">
-    </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <div class="side-menu" id="sideMenu">
-      <div onclick="toggleMenu()" style="align-self:flex-end; padding: 10px 20px; cursor:pointer;">✖️</div>
-      <a href="#boom">Boum</a>
-      <a href="#chasse">Chasse</a>
-      <a href="#jeux">Jeux</a>
-      <a href="#packs">Packs</a>
-      <a href="#optionnels">Options</a>
-      <a href="#inclus">Inclus</a>
-      <a href="#faq">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </div>
+    <img src="partymania_logo.png" alt="PARTYMANIA Logo" class="logo-img" />
   </header>
   <main>
-    <section id="boom" class="reveal" style="background: #fff0f5;">
-      <h2>💥 Boum</h2>
-      <p>30min - 25fr<br>45min - 35fr<br>1h - 40fr<br>Chaque +15min → +10fr</p>
-      <p><em>On doit venir 20 minutes avant pour préparer la boum.</em></p>
-    </section>
-
-    <section id="chasse" class="reveal" style="background: #f3f0ff;">
-      <h2>🗺️ Chasse au Trésor</h2>
-      <p>5min - 7fr<br>7min - 10fr<br>10min - 12fr<br>15min - 15fr<br>20min - 19fr<br>25min - 23fr<br>30min - 25fr<br>35min - 30fr</p>
-      <p><em>On doit venir sur place 30 minutes avant pour préparer la chasse au trésor.</em></p>
-    </section>
-
-    <section id="jeux" class="reveal" style="background: #f0fff4;">
-      <h2>🎲 Jeux Divers</h2>
-      <p>10min - 7fr<br>15min - 10fr<br>20min - 16fr<br>25min - 21fr<br>30min - 26fr<br>35min - 30fr<br>40min - 35fr<br>45min - 39fr</p>
-      <p><em>On doit venir 10 minutes avant pour organiser nos jeux.</em></p>
-    </section>
-
-    <section id="packs" class="reveal" style="background: #fffbe6;">
-      <h2>🎁 Packs</h2>
-      <div class="pack">Pack ultime: Boum 1h30 + Chasse 20min + Jeux 40min = <span class="promo">100fr</span> (au lieu de 114fr)</div>
-      <div class="pack">Party pack: Boum 2h + Jeux 20min = <span class="promo">85fr</span> (au lieu de 96fr)</div>
-      <div class="pack">Super pack: Boum 1h + Chasse 15min + Jeux 25min = <span class="promo">69fr</span> (au lieu de 76fr)</div>
-      <div class="pack">Mini pack: Boum 30min + Chasse 10min + Jeux 20min = <span class="promo">45fr</span> (au lieu de 53fr)</div>
-      <div class="pack">Fun pack: Chasse 25min + Jeux 30min = <span class="promo">50fr</span> (au lieu de 59fr)</div>
-    </section>
-
-    <section id="optionnels" class="reveal" style="background: #f0f8ff;">
-      <h2>🧩 Options Supplémentaires</h2>
-      <ul>
-        <li><strong>Écran 1080p 60Hz</strong> (2x HDMI, 1x VGA) — <span class="promo">+10 CHF</span></li>
-        <li><strong>Écran + AirPlay</strong> — <span class="promo">+19 CHF</span></li>
-        <li><strong>Jeux de lumière disco</strong> — <span class="promo">+15 CHF</span></li>
-        <li><strong>Haut-parleur Yamaha HS5</strong> (max 2x) — <span class="promo">+16 CHF / unité</span></li>
-        <li><strong>Visuel personnalisé à l'écran</strong> (si écran inclus) — <span class="promo">+7.99 CHF</span></li>
-        <li><strong>Snacks (chips, bonbons...)</strong> — <span class="promo">+15.99 CHF</span></li>
-        <li><strong>Boissons (Coca, Ice Tea...)</strong> — <span class="promo">+14.99 CHF</span></li>
-        <li><strong>Décoration fête/anniversaire</strong> — <span class="promo">+26.99 CHF</span></li>
-        <li><strong>Table pliante portable</strong> — <span class="promo">+9.99 CHF</span></li>
-      </ul>
-    </section>
-
-    <section id="inclus" class="reveal" style="background: #fff;">
-      <h2>📦 Inclus dans tous les packs</h2>
-      <ul>
-        <li>2x enceintes 25W</li>
-        <li>Musique pendant toute la fête</li>
-        <li>Jeux de base animés pendant les fêtes</li>
-        <li>Fun garanti ! 🎉</li>
-      </ul>
-    </section>
-    <section id="faq" class="reveal" style="background: #f8f8ff; padding: 2rem;">
-      <h2>❓ FAQ</h2>
-      <p><strong>Est-ce que je peux combiner plusieurs packs ?</strong><br>Oui, tout est personnalisable.</p>
-      <p><strong>Peut-on apporter notre propre nourriture ?</strong><br>Oui, mais préviens-nous à l’avance.</p>
-      <p><strong>Comment réserver ?</strong><br>Utilise la page contact pour nous écrire directement.</p>
-    </section>
+    <h1>Bienvenue chez PARTYMANIA 🎉</h1>
+    <p>Créez des fêtes spectaculaires grâce à nos packs, jeux, options et idées originales. Le fun commence ici !</p>
+    <div style="margin: 2.5rem 0;">
+      <a href="contact.html" style="background: linear-gradient(45deg, #9b51e0, #ff2e7a); font-size: 1.3rem; padding: 1.3rem 2rem; border-radius: 60px; font-weight: 800; box-shadow: 0 6px 18px rgba(155, 81, 224, 0.3); text-decoration: none; color: white; display: inline-block; transition: all 0.3s ease;">
+        📬 Contactez-nous
+      </a>
+    </div>
+    <nav>
+      <a href="packs.html">🎁 Packs</a>
+      <a href="optionals.html">🧩 Options</a>
+      <a href="jeux.html">🎲 Jeux</a>
+      <a href="boom.html">🎉 Boum</a>
+      <a href="chasse.html">🗺️ Chasse</a>
+      <a href="inclus.html">📦 Inclus</a>
+      <a href="faq.html">❓ FAQ</a>
+    </nav>
   </main>
   <footer>
     © 2025 PARTYMANIA. Tous droits réservés.
   </footer>
-  <div id="floating-intro">
-    <button onclick="document.getElementById('floating-intro').remove()">✖️</button>
-    <h2 style="color:#ff4081;">🎉 Prêt à organiser une fête ?</h2>
-    <p>Découvre nos packs sur mesure pour un anniversaire inoubliable !</p>
-    <a href="#packs" style="display:inline-block; margin-top:1rem; background:#ff4081; color:white; padding:0.7rem 1.5rem; border-radius:8px; text-decoration:none; font-weight:bold;">Voir les Packs</a>
-  </div>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('sideMenu');
-      menu.classList.toggle('open');
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const menuLinks = document.querySelectorAll('.side-menu a');
-      menuLinks.forEach(link =>
-        link.addEventListener('click', () => {
-          document.getElementById('sideMenu').classList.remove('open');
-        })
-      );
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        const intro = document.getElementById('floating-intro');
-        if (intro) intro.classList.add('show');
-      }, 2000);
-
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            obs.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.05
-      });
-
-      const revealEls = document.querySelectorAll('.reveal');
-      revealEls.forEach(el => observer.observe(el));
-    });
-  </script>
 </body>
 </html>
