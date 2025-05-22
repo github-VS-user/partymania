@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - PARTYMANIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #fdf6f9, #ffeef4);
+      color: #3a3a3a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #ff2e7a;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(255, 46, 122, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo-img {
+      height: 55px;
+      filter: drop-shadow(0 0 5px rgba(255, 46, 122, 0.7));
+    }
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 2.7rem;
+      color: #ff2e7a;
+      margin-bottom: 2rem;
+      letter-spacing: 1.5px;
+      text-align: center;
+      text-shadow: 1px 1px 4px rgba(255, 46, 122, 0.3);
+    }
+    form {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(255, 64, 129, 0.2);
+      width: 100%;
+      max-width: 520px;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      margin-top: 1.4rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #ff2e7a;
+      outline: none;
+    }
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(45deg, #ff4081, #ff2e7a);
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      background: linear-gradient(45deg, #ff2e7a, #ff4081);
+      transform: translateY(-2px);
+    }
+    nav.main-nav {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    nav.main-nav a {
+      display: inline-block;
+      background: #ff4081;
+      color: white;
+      padding: 0.85rem 1.9rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 64, 129, 0.5);
+      transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.2s ease;
+      user-select: none;
+      cursor: pointer;
+    }
+    nav.main-nav a:hover {
+      background: #d91e64;
+      box-shadow: 0 8px 20px rgba(217, 30, 100, 0.75);
+      transform: translateY(-3px);
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.95rem;
+      color: #a63d6e;
+      background: #fff3f9;
+      margin-top: auto;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="partymania_logo.png" alt="PARTYMANIA Logo" class="logo-img" />
+  </header>
+  <main>
+    <h1>📬 Contacte-nous</h1>
+    <form action="https://formsubmit.co/dariodibonaoff@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://partymania.master3d.net/merci.html">
+
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+    <nav class="main-nav">
+      <a href="index.html">← Retour à l'accueil</a>
+    </nav>
+  </main>
+  <footer>
+    © 2025 PARTYMANIA. Tous droits réservés.
+  </footer>
+</body>
+</html>
